@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .left {
+                float: left;
+                width: 30%;
+                padding: 20px;
+            }
+            
+            .right {
+                float: left;
+                width: 20%;
+                padding: 20px;
+            }
+        </style>
+        
+        <meta charset="UTF-8">
+        <title>Operator Logic Game</title>        		
+    </head>
+	
+    <body>
+        <div class="left" id="leftbox">
+            <div>                
+                <fieldset id="hiLoGame">
+                    <legend>High/Low Game</legend>
+                    
+                    <h4>Current Card:</h4>
+                    <p id="card">N/A</p>
+                    
+                    <p>The next card will be...</p>
+                    <input type="button" onclick="submitGuess('Higher')" value="Higher"> &nbsp <input type="button" onclick="submitGuess('Lower')" value="Lower">
+                                        
+                    <p id="result">You were: </p>                        
+                    <p id="score">You've got 0/0 correct.</p>
+                    
+                </fieldset>
+                
+                <br>
+                <input type="button" onclick="location.href='index.html';" value="Return to menu">
+                
+            </div>
+        </div>
+        
+        <div class="right" id="rightbox"> 
+            <div>
+                <br>
+                <b>Help:</b>               
+                <p>In High/Low you are presented with a card with a number value between 1 and 11. You must guess whether the next card drawn will be <b>Higher</b> or <b>Lower</b> than the previous one.</p>
+                <p>Good Luck!</p>
+            </div>
+        </div>               
+                
+        <script src="cardGame.js"></script>        
+    </body>
+</html>
